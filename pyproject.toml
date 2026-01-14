@@ -1,0 +1,25 @@
+[project]
+name = "comment-sniper"
+version = "0.1.0"
+description = "MVP LinkedIn Engagement System"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi", # Веб-фреймворк (нужен для webhook'ов и структуры)
+    "sqlmodel", # Работа с БД (ORM поверх SQLite)
+    "aiosqlite", # Драйвер для асинхронной работы с SQLite
+    "openai", # Клиент для GPT-4o
+    "instructor", # Надстройка над OpenAI для четкой структуры ответов
+    "aiogram", # Библиотека для Телеграм-бота
+    "pydantic-settings", # Управление настройками через .env
+    "google-auth-oauthlib", # Авторизация Gmail
+    "google-api-python-client", # API Gmail
+    "beautifulsoup4", # Чистка HTML из писем
+    "camoufox[geo]", # Браузер для скрапинга (уже с патчами против детекта) # Красивые и удобные логи
+    "loguru",
+    "google-genai>=1.55.0",
+    "uvicorn[standard]>=0.40.0",
+    "langchain-openai>=1.1.7",
+]
+
+[tool.uv]
+# Это поможет uv работать быстрее

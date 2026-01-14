@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Environment variables (ВАЖНО: тут хранятся ключи!)
+.env
+
+# Database
+*.db
+*.sqlite3
+/data/*
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+# secrets
+token.json
+
